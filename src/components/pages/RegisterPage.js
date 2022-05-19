@@ -20,8 +20,26 @@ export default function SignUpPage() {
                 </p>
                 <p>
                     <label>Password</label><br/>
-                    <input type="password" name="password" requiredc />
+                    <input type="password" name="password" required />
                 </p>
+
+            {/*
+                <p>
+                    <label>Confirm Password</label><br/>
+                    <input type="password" name="Confirm Password" required />
+                </p>
+                validate(){
+                    if (typeof input["password"] !== "undefined" && typeof input["Confirm Password"] !== "undefined") {
+                    if (input["password"] != input["Confirm Password"]) {
+                          isValid = false;
+                          errors["password"] = "Passwords don't match.";
+                          errors["Confirm Password"] = "Passwords don't match.";
+                        }
+                    }
+                return isValid;
+                }
+            */}
+
                 <p>
                     <input type="checkbox" name="checkbox" id="checkbox" required /> <span>I agree all statements in <a href="https://google.com" target="_blank" rel="noopener noreferrer">terms of service</a></span>.
                 </p>
